@@ -1,0 +1,6 @@
+{
+  "name": "Mindful Breath",
+  "description": "A peaceful offline breathing companion featuring medically recognized patterns, relaxing animations, and haptic feedback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

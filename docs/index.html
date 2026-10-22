@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Mindful Breath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2E6930;
+      --primary-light: #4A884C;
+      --primary-soft: #E8F5E9;
+      --accent: #00796B;
+      --bg-gradient: linear-gradient(135deg, #F4FBF4 0%, #E8F5E9 50%, #E0F2F1 100%);
+      --surface: #FFFFFF;
+      --surface-variant: #F7FAF8;
+      --text: #1C2B1E;
+      --text-muted: #526354;
+      --border: #DCE7DD;
+      --shadow: 0 10px 30px rgba(46, 105, 48, 0.08);
+      --radius: 20px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #81C784;
+        --primary-light: #A5D6A7;
+        --primary-soft: #1B2B1D;
+        --accent: #4DB6AC;
+        --bg-gradient: linear-gradient(135deg, #101811 0%, #162417 50%, #112220 100%);
+        --surface: #1B261D;
+        --surface-variant: #223124;
+        --text: #E8F5E9;
+        --text-muted: #A3B8A5;
+        --border: #2C3E2E;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .container {
+      max-width: 820px;
+      width: 100%;
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      padding: 48px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px 10px;
+      }
+      .container {
+        padding: 28px 20px;
+        border-radius: 16px;
+      }
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .app-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--primary-soft);
+      border-radius: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .app-icon svg {
+      width: 36px;
+      height: 36px;
+      fill: var(--primary);
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .date-badge {
+      display: inline-block;
+      margin-top: 14px;
+      background: var(--surface-variant);
+      border: 1px solid var(--border);
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    /* Highlights Grid */
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .highlight-card {
+      background: var(--surface-variant);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .highlight-card h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .highlight-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    .section li {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    /* Notice Box */
+    .notice-box {
+      background: var(--primary-soft);
+      border-left: 4px solid var(--primary);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+    .notice-box p {
+      font-size: 13px;
+      color: var(--text);
+      margin: 0;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .contact-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="app-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.33 19.58 10.63 20 12 20c4.97 0 9-4.03 9-9 0-4.97-4.03-9-9-9zm0 15c-1.07 0-2.09-.28-2.98-.78l3.69-3.69c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0l-3.69 3.69C7.28 14.92 7 13.9 7 12.83 7 9.61 9.61 7 12.83 7c1.07 0 2.09.28 2.98.78l-3.69 3.69c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l3.69-3.69c.39.89.78 1.91.78 2.98 0 3.22-2.61 5.83-5.83 5.83z"/>
+        </svg>
+      </div>
+      <h1>Mindful Breath: Relax & Focus</h1>
+      <p class="subtitle">Official Privacy Policy & Data Safety Information</p>
+      <span class="date-badge">Effective Date: October 2026</span>
+    </header>
+
+    <!-- Key Highlights Grid -->
+    <div class="highlights">
+      <div class="highlight-card">
+        <h3>🔒 100% Offline</h3>
+        <p>Operates entirely on your local device. No internet connectivity required or requested.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>🛡️ Zero Data Collected</h3>
+        <p>We do not collect, transmit, store, or share any personal, telemetry, or health information.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>🚫 Ad-Free & Tracker-Free</h3>
+        <p>Contains zero advertisements, third-party analytics SDKs, or behavioral trackers.</p>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <section class="section">
+      <h2>1. Overview and Commitment</h2>
+      <p>
+        <strong>Mindful Breath: Relax & Focus</strong> ("we", "our", or "the app") is a mindfulness and breathing training application developed to assist users with stress reduction, relaxation, and focus.
+      </p>
+      <p>
+        Your privacy is our utmost priority. This Privacy Policy details our strict commitment to zero personal data collection, zero network transmission, and total on-device privacy.
+      </p>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section">
+      <h2>2. Information Collection and Storage</h2>
+      <p>
+        Mindful Breath strictly collects <strong>no personal information</strong>:
+      </p>
+      <ul>
+        <li><strong>No Personal Identifiers:</strong> We do not ask for or collect names, email addresses, phone numbers, or account credentials.</li>
+        <li><strong>No Health or Biometric Records:</strong> We do not track, record, or store medical data, heart rate measurements, or microphone audio.</li>
+        <li><strong>No Device Telemetry:</strong> We do not collect device identifiers (IMEI, MAC address), IP addresses, or location coordinates.</li>
+        <li><strong>Local Storage Only:</strong> Any preferences you select (such as chosen breathing technique, sound volume, or session countdown) and your accumulated session statistics are stored solely on your device using Android's private <code>SharedPreferences</code> and are never transmitted outside your phone.</li>
+      </ul>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="section">
+      <h2>3. Device Permissions</h2>
+      <p>
+        Mindful Breath adheres strictly to the principle of least privilege. The application requires <strong>zero sensitive runtime permissions</strong>:
+      </p>
+      <ul>
+        <li>No Internet permission (<code>android.permission.INTERNET</code> is not requested).</li>
+        <li>No Location access (no GPS or network location).</li>
+        <li>No Storage or Media access (no photos, media, or file access).</li>
+        <li>No Camera or Microphone access.</li>
+        <li><strong>Optional Haptic Feedback:</strong> The app utilizes the device's internal vibration motor (<code>android.permission.VIBRATE</code>) purely for tactile breathing cues. This permission cannot access personal data.</li>
+      </ul>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="section">
+      <h2>4. Third-Party Services and Advertising</h2>
+      <p>
+        Mindful Breath is 100% ad-free and tracker-free. We do not incorporate any third-party advertising SDKs, marketing trackers, or external behavioral analytics (such as Facebook SDK, Google AdMob, or Firebase Analytics).
+      </p>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="section">
+      <h2>5. Health and Wellness Disclaimer</h2>
+      <div class="notice-box">
+        <p>
+          <strong>Medical Notice:</strong> Mindful Breath is created solely for personal wellness, relaxation, and mindfulness training. It is not a medical device, diagnostic tool, or a substitute for professional clinical medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional regarding any medical conditions or severe respiratory issues.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="section">
+      <h2>6. Children's Privacy</h2>
+      <p>
+        Because Mindful Breath does not collect, process, or transmit any user data from any individual, it is fully compliant with the Children's Online Privacy Protection Act (COPPA), GDPR-K, and Google Play Families Policy. The application is safe for users of all ages.
+      </p>
+    </section>
+
+    <!-- Section 7 -->
+    <section class="section">
+      <h2>7. Updates to This Policy</h2>
+      <p>
+        Should we update or modify this Privacy Policy, the updated version will be posted at this URL with an updated effective date.
+      </p>
+    </section>
+
+    <!-- Section 8 -->
+    <section class="section">
+      <h2>8. Contact Us</h2>
+      <p>
+        If you have any questions or inquiries regarding this Privacy Policy or the Mindful Breath app, please contact:
+      </p>
+      <p>
+        <strong>Developer Support:</strong> <a class="contact-link" href="mailto:mdmishadrahman500@gmail.com">mdmishadrahman500@gmail.com</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2026 Mindful Breath: Relax & Focus. All rights reserved.</p>
+      <p>Built with privacy and tranquility in mind.</p>
+    </footer>
+  </main>
+
+</body>
+</html>
